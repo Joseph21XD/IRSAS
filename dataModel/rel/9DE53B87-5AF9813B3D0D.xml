@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="PROYECTO_ASADA" id="9DE53B87-84A2-FC16-0A48-5AF9813B3D0D" mainViewID="1A4F9C5D-DEB6-2BC3-232A-BE992161D697">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:07:24 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+</relationalModel>

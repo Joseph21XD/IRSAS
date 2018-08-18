@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48A4F6AA-3D42-46C8-E1A6-18ECEEDAAA07" name="Subcomponente">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:49:21 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2908E296-656F-5A0F-A6DA-BA4F1CD2E5DB">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:49:49 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="934C2E03-9E62-1091-0D9D-F8A2EAB0E821">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:50:13 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Componente_ID" id="53F4549A-587A-AB3A-C375-7159575B94B6">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:50:45 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27828271-1F7D-D1A4-EFA8-986F4B4EB62C" referredColumn="3FD8F35A-F209-8944-B672-061047831D38"/>
+</associations>
+</Column>
+<Column name="Medida_ID" id="1F6054EE-1C9C-8955-4DF8-12A644994F5C">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:55:28 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7EA912FF-C1C0-A98D-AC0D-78A520CF36BA" referredColumn="063DDD7C-BC38-6CC0-7A7A-CD27B34C2466"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12C9A84F-7129-CE5A-CC2D-605119660CB8" name="Subcomponente_PK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:49:49 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2908E296-656F-5A0F-A6DA-BA4F1CD2E5DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="687DAD52-4113-722A-C412-454A42D9CBAE" name="Subcomponente_Componente_FK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:50:45 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53F4549A-587A-AB3A-C375-7159575B94B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="278AF32B-644C-332F-BE66-BF76C8B49360" name="Subcomponente_Medida_FK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:55:28 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F6054EE-1C9C-8955-4DF8-12A644994F5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

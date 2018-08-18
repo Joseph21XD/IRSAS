@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9646D52C-8AE5-167C-4907-C1470BBF135D" name="CANTON">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:16:36 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="BBB2A5AB-9B81-3708-8410-80E055FC9975">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:17:15 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="AB72E5BD-5322-10A6-8BD3-560AA79821A9">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:22:55 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROVINCIA_ID" id="3606D00D-40E5-C5B7-5A6F-36A489668D26">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:24:41 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6857171-CB14-F453-703A-14EEF81C7E4F" referredColumn="468B0F25-5CE4-3E24-D012-E9C91B2794F5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1C0ABFB-6273-47BA-4FB9-F18F6D925196" name="CANTON_PK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:17:15 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBB2A5AB-9B81-3708-8410-80E055FC9975"/>
+<colUsage columnID="3606D00D-40E5-C5B7-5A6F-36A489668D26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCEB2A96-2E90-3A2E-3752-221B83DE2A47" name="CANTON_PROVINCIA_FK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:24:41 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3606D00D-40E5-C5B7-5A6F-36A489668D26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

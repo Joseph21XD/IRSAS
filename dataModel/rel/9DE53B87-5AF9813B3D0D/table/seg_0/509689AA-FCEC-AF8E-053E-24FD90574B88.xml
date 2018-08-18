@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="509689AA-FCEC-AF8E-053E-24FD90574B88" name="DISTRITO">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:25:20 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E61D48CA-7606-1CB9-EBD2-17FC421CB967">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:26:39 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="F837EC90-8D7B-936C-3918-E3015434427A">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:26:55 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTON_ID" id="A513301E-111F-1AB7-190E-7C5DFD25566C">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:28:43 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9065724B-1F01-4C27-82B5-F77E4A37FA2A" referredColumn="BBB2A5AB-9B81-3708-8410-80E055FC9975"/>
+</associations>
+</Column>
+<Column name="CANTON_PROVINCIA_ID" id="58DFF6F3-8A6D-A7E5-C233-B937BC35AC74">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:28:43 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9065724B-1F01-4C27-82B5-F77E4A37FA2A" referredColumn="3606D00D-40E5-C5B7-5A6F-36A489668D26"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D394BA7C-8972-0985-2849-3136C451F766" name="DISTRITO_PK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:26:39 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E61D48CA-7606-1CB9-EBD2-17FC421CB967"/>
+<colUsage columnID="A513301E-111F-1AB7-190E-7C5DFD25566C"/>
+<colUsage columnID="58DFF6F3-8A6D-A7E5-C233-B937BC35AC74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34197550-2C7C-7071-A2F3-FA42A569390C" name="DISTRITO_CANTON_FK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-16 04:28:43 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A513301E-111F-1AB7-190E-7C5DFD25566C"/>
+<colUsage columnID="58DFF6F3-8A6D-A7E5-C233-B937BC35AC74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

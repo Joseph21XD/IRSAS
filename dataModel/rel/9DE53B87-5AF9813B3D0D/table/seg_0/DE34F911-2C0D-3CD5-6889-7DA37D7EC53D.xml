@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE34F911-2C0D-3CD5-6889-7DA37D7EC53D" name="SubcomponenteXAsada">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:56:05 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="F8B274BC-D942-6E0A-B27B-3A527231D563">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:59:28 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Año" id="7A78CA3F-4FD2-DCC6-AF9C-48A5D0BABA5A">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 04:00:05 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISTRITO_ID" id="BFA9CDCA-6862-2662-9602-D6B0239A325D">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 04:04:21 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B09C2A2-7676-9A6C-366E-5F4139468B62" referredColumn="E61D48CA-7606-1CB9-EBD2-17FC421CB967"/>
+</associations>
+</Column>
+<Column name="DISTRITO_CANTON_ID" id="0CD4730D-2752-2EE1-6CA1-084F112C575C">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 04:04:21 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B09C2A2-7676-9A6C-366E-5F4139468B62" referredColumn="A513301E-111F-1AB7-190E-7C5DFD25566C"/>
+</associations>
+</Column>
+<Column name="DISTRITO_CANTON_PROVINCIA_ID" id="51CF8C5E-2EEA-EBCC-CD16-8E3D1962A432">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 04:04:21 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B09C2A2-7676-9A6C-366E-5F4139468B62" referredColumn="58DFF6F3-8A6D-A7E5-C233-B937BC35AC74"/>
+</associations>
+</Column>
+<Column name="Subcomponente_ID" id="C6C9E987-E9B6-CF79-D663-1B5CD120AA60">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 04:04:41 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="132857BF-0611-6E0A-BF86-B6DDD7544240" referredColumn="2908E296-656F-5A0F-A6DA-BA4F1CD2E5DB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DA24C8E9-FBE7-8770-DD54-3421E417265B" name="SubcomponenteXAsada_PK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 03:59:28 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8B274BC-D942-6E0A-B27B-3A527231D563"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91319C4A-B091-6C3E-BAB3-2C3A099F45E0" name="ASADA_DISTRITO_FK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 04:04:21 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFA9CDCA-6862-2662-9602-D6B0239A325D"/>
+<colUsage columnID="0CD4730D-2752-2EE1-6CA1-084F112C575C"/>
+<colUsage columnID="51CF8C5E-2EEA-EBCC-CD16-8E3D1962A432"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6446F034-503B-EB39-900A-8EE784AE4B7F" name="COMPONENTE_ASADA_FK">
+<createdBy>ramir</createdBy>
+<createdTime>2018-08-18 04:04:41 UTC</createdTime>
+<ownerDesignName>dataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6C9E987-E9B6-CF79-D663-1B5CD120AA60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
