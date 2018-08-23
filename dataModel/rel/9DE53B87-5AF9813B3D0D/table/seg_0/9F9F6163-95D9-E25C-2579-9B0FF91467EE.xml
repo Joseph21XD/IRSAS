@@ -1,38 +1,38 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE34F911-2C0D-3CD5-6889-7DA37D7EC53D" name="SubcomponenteXAsada">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9F9F6163-95D9-E25C-2579-9B0FF91467EE" name="Asada">
 <createdBy>ramir</createdBy>
-<createdTime>2018-08-18 03:56:05 UTC</createdTime>
+<createdTime>2018-08-19 03:56:26 UTC</createdTime>
 <ownerDesignName>dataModel</ownerDesignName>
-<ordsAlias>table_10</ordsAlias>
+<ordsAlias>table_8</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="F8B274BC-D942-6E0A-B27B-3A527231D563">
+<Column name="Codigo" id="1967EFB1-DFB1-4CA7-6857-5779091C354D">
 <createdBy>ramir</createdBy>
-<createdTime>2018-08-18 03:59:28 UTC</createdTime>
+<createdTime>2018-08-19 03:56:46 UTC</createdTime>
 <ownerDesignName>dataModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Año" id="7A78CA3F-4FD2-DCC6-AF9C-48A5D0BABA5A">
+<Column name="Nombre" id="C705F203-A79E-E550-E295-9CAA5FB3EB26">
 <createdBy>ramir</createdBy>
-<createdTime>2018-08-18 04:00:05 UTC</createdTime>
+<createdTime>2018-08-19 03:58:13 UTC</createdTime>
 <ownerDesignName>dataModel</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Subcomponente_ID" id="C6C9E987-E9B6-CF79-D663-1B5CD120AA60">
+<Column name="DISTRITO_ID" id="38D8D23E-2ECF-E0A8-675A-252BB09A348B">
 <createdBy>ramir</createdBy>
-<createdTime>2018-08-18 04:04:41 UTC</createdTime>
+<createdTime>2018-08-19 03:58:27 UTC</createdTime>
 <ownerDesignName>dataModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -41,12 +41,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="132857BF-0611-6E0A-BF86-B6DDD7544240" referredColumn="2908E296-656F-5A0F-A6DA-BA4F1CD2E5DB"/>
+<colAssociation fkAssociation="E396E6B9-C713-FF13-6410-FFAB7786D39C" referredColumn="E61D48CA-7606-1CB9-EBD2-17FC421CB967"/>
 </associations>
 </Column>
-<Column name="Asada_Codigo" id="F58B57AA-F4BD-1B1B-111A-31A842DDAF74">
+<Column name="DISTRITO_CANTON_ID" id="0FDD8CB6-293A-8C3E-65D3-996098955E8E">
 <createdBy>ramir</createdBy>
-<createdTime>2018-08-19 03:58:50 UTC</createdTime>
+<createdTime>2018-08-19 03:58:27 UTC</createdTime>
 <ownerDesignName>dataModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -55,51 +55,46 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="4723BD42-7B95-70F9-A902-57346918189C" referredColumn="1967EFB1-DFB1-4CA7-6857-5779091C354D"/>
+<colAssociation fkAssociation="E396E6B9-C713-FF13-6410-FFAB7786D39C" referredColumn="A513301E-111F-1AB7-190E-7C5DFD25566C"/>
 </associations>
 </Column>
-<Column name="valor" id="9A04BA1A-7C45-F076-1EEB-F46B7C40B157">
+<Column name="DISTRITO_CANTON_PROVINCIA_ID" id="AF9A23BA-0E7C-4067-70F4-DDEE2630ADA1">
 <createdBy>ramir</createdBy>
-<createdTime>2018-08-23 03:48:38 UTC</createdTime>
+<createdTime>2018-08-19 03:58:27 UTC</createdTime>
 <ownerDesignName>dataModel</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E396E6B9-C713-FF13-6410-FFAB7786D39C" referredColumn="58DFF6F3-8A6D-A7E5-C233-B937BC35AC74"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="DA24C8E9-FBE7-8770-DD54-3421E417265B" name="SubcomponenteXAsada_PK">
+<ind_PK_UK id="7FD2D4AB-ED8D-752C-AD3F-6BC1C7E27646" name="Asada_PK">
 <createdBy>ramir</createdBy>
-<createdTime>2018-08-18 03:59:28 UTC</createdTime>
+<createdTime>2018-08-19 03:56:46 UTC</createdTime>
 <ownerDesignName>dataModel</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="F8B274BC-D942-6E0A-B27B-3A527231D563"/>
+<colUsage columnID="1967EFB1-DFB1-4CA7-6857-5779091C354D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6446F034-503B-EB39-900A-8EE784AE4B7F" name="COMPONENTE_ASADA_FK">
+<ind_PK_UK id="09369F70-014E-463A-031C-BB0178BF6581" name="Asada_DISTRITO_FK">
 <createdBy>ramir</createdBy>
-<createdTime>2018-08-18 04:04:41 UTC</createdTime>
+<createdTime>2018-08-19 03:58:27 UTC</createdTime>
 <ownerDesignName>dataModel</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="C6C9E987-E9B6-CF79-D663-1B5CD120AA60"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="4CB42FF5-590C-40B2-4F74-CCB0F9A16F96" name="SubcomponenteXAsada_FK">
-<createdBy>ramir</createdBy>
-<createdTime>2018-08-19 03:58:50 UTC</createdTime>
-<ownerDesignName>dataModel</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="F58B57AA-F4BD-1B1B-111A-31A842DDAF74"/>
+<colUsage columnID="38D8D23E-2ECF-E0A8-675A-252BB09A348B"/>
+<colUsage columnID="0FDD8CB6-293A-8C3E-65D3-996098955E8E"/>
+<colUsage columnID="AF9A23BA-0E7C-4067-70F4-DDEE2630ADA1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

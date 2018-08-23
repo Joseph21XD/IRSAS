@@ -3,7 +3,7 @@
 <createdBy>ramir</createdBy>
 <createdTime>2018-08-18 03:50:45 UTC</createdTime>
 <ownerDesignName>dataModel</ownerDesignName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 <referredTableID>AA70B4D6-99F6-86A4-607F-C69866366E9D</referredTableID>
 <keyObject>32DDEFCE-6308-49EB-88BC-DFCADC506622</keyObject>
 <referredKeyID>32DDEFCE-6308-49EB-88BC-DFCADC506622</referredKeyID>
