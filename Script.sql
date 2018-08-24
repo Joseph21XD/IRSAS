@@ -60,7 +60,7 @@ ALTER TABLE Subcomponente ADD CONSTRAINT Subcomponente_PK PRIMARY KEY ( ID ) ;
 CREATE TABLE SUBCOMPONENTEXASADA
   (
     ID               INTEGER NOT NULL AUTO_INCREMENT,
-    Año              DATE ,
+    Año              INTEGER NOT NULL ,
     Subcomponente_ID INTEGER NOT NULL ,
     Asada_Codigo     INTEGER NOT NULL,
     valor			 INTEGER NOT NULL,
@@ -85,20 +85,6 @@ DELETE CASCADE ;
 
 ALTER TABLE Subcomponente ADD CONSTRAINT Subcomponente_Medida_FK FOREIGN KEY ( Medida_ID ) REFERENCES Medida ( ID ) ON
 DELETE CASCADE ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 use proyecto_asada;
@@ -129,6 +115,10 @@ LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/
 LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Subcomponentes.csv' INTO TABLE subcomponente
   FIELDS TERMINATED BY ','
   LINES TERMINATED BY '\n' IGNORE 1 rows;
+  
+LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/FillDat.csv' INTO TABLE subcomponentexasada
+  FIELDS TERMINATED BY ','
+  LINES TERMINATED BY '\n' IGNORE 1 rows (Año,subcomponente_id,asada_codigo,valor);
 
 
 
@@ -139,8 +129,41 @@ select * from canton C;
 select * from distrito D; 
 select * from medida M;
 select * from componente C;
-select C.Nombre,S.Nombre,M.nombre from subcomponente S inner join Medida M on M.id=S.Medida_ID inner join componente C on C.ID=S.Componente_ID; 
-select * from subcomponentexasada;
+select * from subcomponente S;
+
+
+CREATE view dicotomicas as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
+S.Nombre as Subcomponente,if(SA.valor=1,"SI","NO") as Respuesta 
+from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
+inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
+on S.componente_id=C.ID where S.Medida_ID=1 ORDER BY 1 ASC;
+
+CREATE view porcentajes as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
+S.Nombre as Subcomponente,concat(SA.valor,"%") as Respuesta 
+from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
+inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
+on S.componente_id=C.ID where S.Medida_ID=2 ORDER BY 1 ASC;
+
+CREATE view numericas as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
+S.Nombre as Subcomponente,SA.valor as Respuesta 
+from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
+inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
+on S.componente_id=C.ID where S.Medida_ID=3 ORDER BY 1 ASC;
+
+CREATE view nominal as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
+S.Nombre as Subcomponente,if(SA.valor=1,"MENOR",IF(SA.valor=2,"MAYOR","IGUAL")) as Respuesta 
+from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
+inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
+on S.componente_id=C.ID where S.Medida_ID=4 order by 1 asc;
+
+
+
+
+
+select * from dicotomicas;
+select * from nominal;
+select * from numericas;
+select * from porcentajes;
 
 select A.nombre,D.nombre from Asada A 
 inner join distrito D on A.Distrito_ID= D.ID and A.distrito_Canton_ID = D.CANTON_ID 
