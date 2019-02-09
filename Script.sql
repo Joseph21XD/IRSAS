@@ -1,177 +1,121 @@
 USE PROYECTO_ASADA;
 
-CREATE TABLE ASADA
-  (
-    Codigo                       INTEGER NOT NULL ,
-    Nombre                       VARCHAR (150) ,
-    DISTRITO_ID                  INTEGER NOT NULL ,
-    DISTRITO_CANTON_ID           INTEGER NOT NULL ,
-    DISTRITO_CANTON_PROVINCIA_ID INTEGER NOT NULL
-  ) ;
-ALTER TABLE Asada ADD CONSTRAINT Asada_PK PRIMARY KEY ( Codigo ) ;
-
-
-CREATE TABLE CANTON
-  (
-    ID           INTEGER NOT NULL ,
-    Nombre       VARCHAR (20) ,
-    PROVINCIA_ID INTEGER NOT NULL
-  ) ;
-ALTER TABLE CANTON ADD CONSTRAINT CANTON_PK PRIMARY KEY ( ID, PROVINCIA_ID ) ;
-
-
-CREATE TABLE COMPONENTE
-  ( ID INTEGER NOT NULL , Nombre VARCHAR (50)
-  ) ;
-ALTER TABLE Componente ADD CONSTRAINT Componente_PK PRIMARY KEY ( ID ) ;
-
-
-CREATE TABLE DISTRITO
-  (
-    ID                  INTEGER NOT NULL ,
-    Nombre              VARCHAR (50) ,
-    CANTON_ID           INTEGER NOT NULL ,
-    CANTON_PROVINCIA_ID INTEGER NOT NULL
-  ) ;
-ALTER TABLE DISTRITO ADD CONSTRAINT DISTRITO_PK PRIMARY KEY ( ID, CANTON_ID, CANTON_PROVINCIA_ID ) ;
-
-
-CREATE TABLE MEDIDA
-  ( ID INTEGER NOT NULL AUTO_INCREMENT, Nombre VARCHAR (50), PRIMARY KEY ( ID )
-  ) ;
-
-
-CREATE TABLE PROVINCIA
-  ( ID INTEGER NOT NULL , Nombre VARCHAR (10)
-  ) ;
-ALTER TABLE PROVINCIA ADD CONSTRAINT PROVINCIA_PK PRIMARY KEY ( ID ) ;
-
-
-CREATE TABLE SUBCOMPONENTE
-  (
-    ID            INTEGER NOT NULL ,
-    Nombre        VARCHAR (50) ,
-    Componente_ID INTEGER NOT NULL ,
-    Medida_ID     INTEGER NOT NULL
-  ) ;
-ALTER TABLE Subcomponente ADD CONSTRAINT Subcomponente_PK PRIMARY KEY ( ID ) ;
-
-
-CREATE TABLE SUBCOMPONENTEXASADA
-  (
-    ID               INTEGER NOT NULL AUTO_INCREMENT,
-    Año              INTEGER NOT NULL ,
-    Subcomponente_ID INTEGER NOT NULL ,
-    Asada_Codigo     INTEGER NOT NULL,
-    valor			 INTEGER NOT NULL,
-    PRIMARY KEY ( ID )
-  ) ;
-
-ALTER TABLE Asada ADD CONSTRAINT Asada_DISTRITO_FK FOREIGN KEY ( DISTRITO_ID, DISTRITO_CANTON_ID, DISTRITO_CANTON_PROVINCIA_ID ) REFERENCES DISTRITO ( ID, CANTON_ID, CANTON_PROVINCIA_ID ) ;
-
-ALTER TABLE CANTON ADD CONSTRAINT CANTON_PROVINCIA_FK FOREIGN KEY ( PROVINCIA_ID ) REFERENCES PROVINCIA ( ID ) ON
-DELETE CASCADE ;
-
-ALTER TABLE SubcomponenteXAsada ADD CONSTRAINT COMPONENTE_ASADA_FK FOREIGN KEY ( Subcomponente_ID ) REFERENCES Subcomponente ( ID ) ON
-DELETE CASCADE ;
-
-ALTER TABLE DISTRITO ADD CONSTRAINT DISTRITO_CANTON_FK FOREIGN KEY ( CANTON_ID, CANTON_PROVINCIA_ID ) REFERENCES CANTON ( ID, PROVINCIA_ID ) ON
-DELETE CASCADE ;
-
-ALTER TABLE SubcomponenteXAsada ADD CONSTRAINT SubcomponenteXAsada_FK FOREIGN KEY ( Asada_Codigo ) REFERENCES Asada ( Codigo ) ;
-
-ALTER TABLE Subcomponente ADD CONSTRAINT Subcomponente_Componente_FK FOREIGN KEY ( Componente_ID ) REFERENCES Componente ( ID ) ON
-DELETE CASCADE ;
-
-ALTER TABLE Subcomponente ADD CONSTRAINT Subcomponente_Medida_FK FOREIGN KEY ( Medida_ID ) REFERENCES Medida ( ID ) ON
-DELETE CASCADE ;
-
-
-use proyecto_asada;
-LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Provincias.csv' INTO TABLE provincia
-  FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows;
-
-LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Cantones.csv' INTO TABLE canton
-  FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows;
-  
-LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Distritos.csv' INTO TABLE distrito
-  FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows;
-  
-LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Medidas.csv' INTO TABLE medida
-  FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows (nombre);
-  
-LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Asadas.csv' INTO TABLE asada
-  FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows;
-  
-LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Componentes.csv' INTO TABLE componente
-  FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows;
-  
-LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Subcomponentes.csv' INTO TABLE subcomponente
-  FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows;
-  
-LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/FillDat.csv' INTO TABLE subcomponentexasada
-  FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows (Año,subcomponente_id,asada_codigo,valor);
-
-
-
-
-
-select * from provincia;
+/*SELECTS*/
+select * from asada A;
+select * from provincia P;
 select * from canton C;
 select * from distrito D; 
 select * from medida M;
 select * from componente C;
 select * from subcomponente S;
+select * from indicador I;
+select * from indicadorxasada I;
+select * from nominal N;
+
+/*DELETE*/
+delete from distrito where id>=0;
+delete from canton where id>=0;
+delete from provincia where id>=0;
+delete from medida where id>=0;
+delete from indicadorxasada where id>=0;
+delete from asada where id>=0;
+delete from componente where ID>=0;
+delete from subcomponente where ID>=0;
+delete from indicador where ID>=0;
+
+/*DROP*/
+drop table indicadorxasada;
+drop table asada;
+drop table nominal;
+drop table indicador;
+drop table subcomponente;
+drop table componente;
+drop table medida;
+drop table usuario;
+drop table distrito;
+drop table canton;
+drop table provincia;
 
 
-CREATE view dicotomicas as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
+
+
+select C.Nombre,Ca.Nombre,P.Nombre from distrito C inner join Canton Ca on C.CANTON_ID=Ca.ID inner join Provincia P on C.CANTON_PROVINCIA_ID= P.ID where C.CANTON_PROVINCIA_ID= P.ID and C.CANTON_ID=Ca.ID;
+select C.ID,Ca.ID,P.ID, C.Nombre,Ca.Nombre,P.Nombre from distrito C, Canton Ca, provincia P where C.CANTON_ID=Ca.ID and C.CANTON_PROVINCIA_ID=P.ID and Ca.PROVINCIA_ID=P.ID;
+
+select A.codigo, A.nombre, P.ID,Ca.ID,C.ID, C.Nombre as distrito,Ca.Nombre as canton,P.Nombre as provincia, C.codigo 
+from Asada A, distrito C, Canton Ca, provincia P 
+where A.DISTRITO_ID=C.ID and A.DISTRITO_CANTON_ID=Ca.ID and A.DISTRITO_CANTON_PROVINCIA_ID=P.ID 
+and C.CANTON_PROVINCIA_ID=P.ID and C.CANTON_ID=Ca.ID and Ca.PROVINCIA_ID=P.ID order by 6;
+
+
+ALTER view dicotomicas as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
 S.Nombre as Subcomponente,if(SA.valor=1,"SI","NO") as Respuesta 
 from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
 inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
 on S.componente_id=C.ID where S.Medida_ID=1 ORDER BY 1 ASC;
 
-CREATE view porcentajes as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
+ALTER view porcentajes as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
 S.Nombre as Subcomponente,concat(SA.valor,"%") as Respuesta 
 from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
 inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
 on S.componente_id=C.ID where S.Medida_ID=2 ORDER BY 1 ASC;
 
-CREATE view numericas as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
+ALTER view numericas as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
 S.Nombre as Subcomponente,SA.valor as Respuesta 
 from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
 inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
 on S.componente_id=C.ID where S.Medida_ID=3 ORDER BY 1 ASC;
 
-CREATE view nominal as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
+ALTER view nominal as select SA.ID,A.Nombre as Asada,C.Nombre as Componente,
 S.Nombre as Subcomponente,if(SA.valor=1,"MENOR",IF(SA.valor=2,"MAYOR","IGUAL")) as Respuesta 
 from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
 inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
 on S.componente_id=C.ID where S.Medida_ID=4 order by 1 asc;
-
-
-
-
 
 select * from dicotomicas;
 select * from nominal;
 select * from numericas;
 select * from porcentajes;
 
+
+
+select A.Nombre, avg(SA.valor) 
+from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
+inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
+on S.componente_id=C.ID  where S.Medida_ID=1 group by(A.Nombre) ORDER BY 1 ASC;
+
+select A.Nombre, count(SA.valor) 
+from subcomponentexasada SA inner join Asada A on A.codigo=SA.Asada_Codigo 
+inner join subcomponente S on SA.Subcomponente_ID=S.ID inner join componente C 
+on S.componente_id=C.ID  where S.Medida_ID=1 group by(A.Nombre) ORDER BY 1 ASC;
+
+
 select A.nombre,D.nombre from Asada A 
 inner join distrito D on A.Distrito_ID= D.ID and A.distrito_Canton_ID = D.CANTON_ID 
-and A.distrito_canton_provincia_ID = D.CANTON_PROVINCIA_ID order by 2 desc;
+and A.distrito_canton_provincia_ID = D.CANTON_PROVINCIA_ID order by 1 desc;
+
+use proyecto_asada;
 
 
-delete from distrito where id>=0;
-delete from canton where id>=0;
-delete from provincia where id>=0;
-delete from medida where id>=0;
 
+insert into subcomponente(id,nombre,componente_ID,Medida_ID) values(27,'EC-2',7,1);
+update subcomponente set Medida_ID=1 where id= 26;
+
+
+insert into usuario values('Joseph Ramírez Barquero','joseph','123',1,'232434fdfgsdfs');
+
+select * from usuario;
+
+
+select A.nombre, Su.detalle ,S.texto from subcomponentexasada S inner join Asada A on A.codigo=S.Asada_Codigo inner join subcomponente Su on Su.ID=S.Subcomponente_ID where S.Asada_Codigo = 155 and Año= 2018;
+
+select C.ID as idd ,Ca.ID as idc ,P.ID as idp, C.Nombre as distrito ,Ca.Nombre as canton ,P.Nombre as provincia from distrito C, Canton Ca, provincia P where C.CANTON_ID=Ca.ID and C.CANTON_PROVINCIA_ID=P.ID and Ca.PROVINCIA_ID=P.ID order by 4;
+
+update componente set valor=10 where id =5;
+
+select * from asada;
+
+
+insert into asada(codigo, nombre, DISTRITO_ID, DISTRITO_CANTON_ID, DISTRITO_CANTON_PROVINCIA_ID) values("+ident+","+nom+","+sites[0]+","+sites[1]+","+sites[2]+");
+
+select distinct c.codigo from Asada A, distrito C, Canton Ca, provincia P where A.DISTRITO_ID=C.ID and A.DISTRITO_CANTON_ID=Ca.ID and A.DISTRITO_CANTON_PROVINCIA_ID=P.ID and C.CANTON_PROVINCIA_ID=P.ID and C.CANTON_ID=Ca.ID and Ca.PROVINCIA_ID=P.ID;

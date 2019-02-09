@@ -1,0 +1,29 @@
+﻿Nombre,Subcomponente,Medida,Detalle,valor
+GAR-1,1,1,Existe sistema de tratamiento individual de aguas negras en la comunidad,0.035
+GAR-2,1,1,Separan las aguas grises del agua pluvial,0.035
+GAR-3,1,1,Población cuenta con alcantarillado pluvial,0.035
+GAR-4,1,1,La población tiene Planta de tratamiento de aguas residuales,0.035
+GAR-5,1,4,Porcentaje de liquidez para invertir en mejoras del acueducto,0.035
+GRS-1,2,2,% Cobertura de recolección de residuos sólidos no valorizables,0.035
+GRS-2,2,1,Existe recolección de residuos valorizables,0.035
+GRS-3,2,1,Destinan presupuesto para erradicar los botaderos clandestinos,0.000
+GRS-4,2,3,Producción per capita de residuos sólidos,0.035
+GRS-5,2,3,Inversión en GIRS por persona por año ($/año),0.035
+GRS-6,2,3,Inversión en la limpieza de vias y áreas comunes por persona en cada cantón,0.035
+GRPH-1,3,1,ubicación de la captación en área protegida o zona de conservación,0.025
+GRPH-2,3,1,demarcación de la zona de protección legalmente,0.025
+GRPH-3,3,1,Se cuenta con información del balance hidrico,0.025
+GRPH-4,3,3,Consumo de agua por la comunidad (l/p/d),0.025
+GRPH-5,3,1,Operador con plan de atención integral de riesgo,0.025
+GRPH-6,3,1,Cuentan con programas para adaptación al cambio climático (SI/No),0.025
+GRPH-7,3,1,Registros de aforos de las fuentes de abastecimiento (SI/No),0.025
+GAP-1,4,1,Se diagnóstica el riesgo en los componentes del acueducto mediante la herramienta SERSA (SI/No),0.026
+GAP-2,4,1,Posee sistema de desinfección,0.026
+GAP-3,4,1,Posee planta potabilizadora,0.026
+GAP-4,4,1,Sello de calidad sanitaria,0.026
+GAF-1,5,4,% De Morosidad en el pago del servicio de agua,0.035
+GAF-2,5,4,Porcentaje de agua no contabilizada,0.035
+SIE-1,6,3,Índice de Desarrollo Social,0.100
+EC-1,7,1, Posee distinción de Bandera Azul ecológica (en la comunidad,0.050
+EC-2,7,1,Los operadores han desarrollado programas de educación ambiental para la comunidad y los imparten regularmente (una vez al año) (Si/No),0.050
+FN-1,8,1,Existe riesgo de eventos naturales,0.100
