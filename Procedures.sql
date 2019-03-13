@@ -12,15 +12,8 @@ FROM
     WHERE
         s.Indicador_ID = i.ID
     GROUP BY (s.Asada_ID)) t
-WHERE
-    A.DISTRITO_ID = C.ID
-        AND A.DISTRITO_CANTON_ID = Ca.ID
-        AND A.DISTRITO_CANTON_PROVINCIA_ID = P.ID
-        AND C.CANTON_PROVINCIA_ID = P.ID
-        AND C.CANTON_ID = Ca.ID
-        AND Ca.PROVINCIA_ID = P.ID
-        AND A.id = t.asada_id
-GROUP BY (c.codigo);
+where A.DISTRITO_ID=C.codigo and 
+        C.CANTON_ID=Ca.ID and C.PROVINCIA_ID=P.ID and A.id=t.asada_id group by(c.codigo);
 
 
 
@@ -32,7 +25,7 @@ FROM
     distrito C,
     Canton Ca,
     provincia P,
-    () t
+    (g) t
 WHERE
     A.DISTRITO_ID = C.ID
         AND A.DISTRITO_CANTON_ID = Ca.ID
@@ -69,15 +62,19 @@ and d.Componente_ID= 4 GROUP BY (s.Asada_ID);
 /*Select para obtener por subcomponentes*/
 	SELECT s.Asada_ID, (SUM(s.valor * i.valor) * 1000000) / (d.valor * c.valor) AS valor FROM indicadorxasada s, indicador i,
     subcomponente d, componente c WHERE s.Indicador_ID = i.ID and i.Subcomponente_ID=d.ID and d.Componente_ID= c.ID
-    and d.id= 6 GROUP BY (s.Asada_ID)
+    and d.id= 4 GROUP BY (s.Asada_ID);
+    
 
 
 
 
+update indicador i, subcomponente s, componente c  set i.valor= (c.Valor*s.valor)/(s.cantpreguntas*10000) where i.ID>0 and i.Subcomponente_ID=s.ID and s.Componente_ID=c.ID;
+
+update subcomponente s set s.CantPreguntas=5 where id=1;
 
 
-
-
+select * from subcomponente;
+select * from indicador;
 
 
 

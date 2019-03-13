@@ -28,12 +28,12 @@ LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/
 LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Subcomponentes.csv' INTO TABLE subcomponente
   CHARACTER SET 'UTF8'
   FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows (nombre, valor, Componente_ID);
+  LINES TERMINATED BY '\n' IGNORE 1 rows (nombre, valor, Componente_ID, cantPreguntas);
   
   
 LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/Indicadores.csv' INTO TABLE indicador
   FIELDS TERMINATED BY ','
-  LINES TERMINATED BY '\n' IGNORE 1 rows (nombre, subcomponente_ID, Medida_ID, detalle,valor);
+  LINES TERMINATED BY '\n' IGNORE 1 rows (codigo, subcomponente_ID, Medida_ID, nombre,valor);
   
 LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/FillDat.csv' INTO TABLE indicadorxasada
   FIELDS TERMINATED BY ','

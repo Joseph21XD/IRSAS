@@ -11,6 +11,7 @@ select * from subcomponente S;
 select * from indicador I;
 select * from indicadorxasada I;
 select * from nominal N;
+select * from usuario U;
 
 /*DELETE*/
 delete from distrito where id>=0;
@@ -25,8 +26,12 @@ delete from indicador where ID>=0;
 
 /*DROP*/
 drop table indicadorxasada;
+drop table usuarioxasada;
+drop table asadainfo;
+drop table indicadorinfo;
 drop table asada;
 drop table nominal;
+drop table lineal;
 drop table indicador;
 drop table subcomponente;
 drop table componente;
@@ -35,6 +40,7 @@ drop table usuario;
 drop table distrito;
 drop table canton;
 drop table provincia;
+
 
 
 
@@ -102,7 +108,7 @@ insert into subcomponente(id,nombre,componente_ID,Medida_ID) values(27,'EC-2',7,
 update subcomponente set Medida_ID=1 where id= 26;
 
 
-insert into usuario values('Joseph Ramírez Barquero','joseph','123',1,'232434fdfgsdfs');
+insert into usuario(nombre,usuario,contrasenna,tipo,token) values('Joseph Ramírez Barquero','joseph','123',1,'232434fdfgsdfs');
 
 select * from usuario;
 
