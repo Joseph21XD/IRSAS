@@ -9,9 +9,12 @@ select * from medida M;
 select * from componente C;
 select * from subcomponente S;
 select * from indicador I;
+select * from indicadorinfo I;
 select * from indicadorxasada I;
 select * from nominal N;
+ 
 select * from usuario U;
+
 
 /*DELETE*/
 delete from distrito where id>=0;
@@ -40,6 +43,24 @@ drop table usuario;
 drop table distrito;
 drop table canton;
 drop table provincia;
+
+
+truncate table indicadorxasada;
+truncate table usuarioxasada;
+truncate table asadainfo;
+truncate table indicadorinfo;
+truncate table asada;
+truncate table nominal;
+truncate table lineal;
+truncate table indicador;
+truncate table subcomponente;
+truncate table componente;
+truncate table medida;
+truncate table usuario;
+truncate table distrito;
+truncate table canton;
+truncate table provincia;
+
 
 
 

@@ -23,7 +23,7 @@ GAP-3,4,1,Posee planta potabilizadora,0.026
 GAP-4,4,1,Sello de calidad sanitaria,0.026
 GAF-1,5,4,% De Morosidad en el pago del servicio de agua,0.035
 GAF-2,5,4,Porcentaje de agua no contabilizada,0.035
-SIE-1,6,3,Índice de Desarrollo Social,0.1
+IDS-1,6,3,Índice de Desarrollo Social,0.1
 EC-1,7,1, Posee distinción de Bandera Azul ecológica (en la comunidad,0.05
 EC-2,7,1,Los operadores han desarrollado programas de educación ambiental para la comunidad y los imparten regularmente (una vez al año) (Si/No),0.05
 FN-1,8,1,Existe riesgo de eventos naturales,0.1

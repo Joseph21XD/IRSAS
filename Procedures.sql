@@ -47,17 +47,13 @@ GROUP BY (c.codigo);
 
 
 /*Select para IRSSAS*/
-SELECT 
-        s.Asada_ID, SUM(s.valor * i.valor) * 100 AS valor
-    FROM
-        indicadorxasada s, indicador i
-    WHERE
-        s.Indicador_ID = i.ID
-    GROUP BY (s.Asada_ID);
+SELECT s.Asada_ID, SUM(s.valor * i.valor) * 100 AS valor, a.Latitud, a.Longitud FROM indicadorxasada s, indicador i, Asada a WHERE s.Indicador_ID = i.ID and s.Asada_ID=a.ID GROUP BY (s.Asada_ID);
+
+
 /* Select para obtener por componentes*/
 SELECT s.Asada_ID, (SUM(s.valor * i.valor) * 10000) / c.valor  AS valor FROM indicadorxasada s, indicador i,
 subcomponente d, componente c WHERE s.Indicador_ID = i.ID  and i.Subcomponente_ID=d.ID and d.Componente_ID= c.ID
-and d.Componente_ID= 4 GROUP BY (s.Asada_ID);
+and d.Componente_ID= 3 GROUP BY (s.Asada_ID);
 
 /*Select para obtener por subcomponentes*/
 	SELECT s.Asada_ID, (SUM(s.valor * i.valor) * 1000000) / (d.valor * c.valor) AS valor FROM indicadorxasada s, indicador i,

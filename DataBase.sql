@@ -57,9 +57,10 @@ CREATE TABLE COMPONENTE(
 CREATE TABLE SUBCOMPONENTE( 
 	ID INTEGER NOT NULL AUTO_INCREMENT, 
     Nombre VARCHAR (50), 
-    valor REAL(6,3) NOT NULL,
+    Valor REAL(6,3) NOT NULL,
 	Componente_ID INTEGER NOT NULL,
     CantPreguntas INTEGER,
+    Siglas Varchar(5),
     PRIMARY KEY ( ID )
   ) ;
 
@@ -70,7 +71,7 @@ CREATE TABLE INDICADOR(
     Subcomponente_ID INTEGER NOT NULL,
     Medida_ID     INTEGER NOT NULL,
     Nombre 	  VARCHAR(200) NOT NULL,
-    valor			 REAL(6,3) NOT NULL,
+    Valor			 REAL(6,3) NOT NULL,
     PRIMARY KEY ( ID )
   ) ;
 
@@ -80,19 +81,19 @@ CREATE TABLE INDICADORXASADA(
     Año              INTEGER NOT NULL ,
     Indicador_ID INTEGER NOT NULL ,
     Asada_ID     INTEGER NOT NULL,
-    valor			 REAL(6,3) NOT NULL,
-    texto			 VARCHAR(20) NOT NULL,
+    Valor			 REAL(6,3) NOT NULL,
+    Texto			 VARCHAR(20) NOT NULL,
     PRIMARY KEY ( ID )
   );
 
 /*Tabla de Usuarios*/
 CREATE TABLE USUARIO(
 	ID INTEGER NOT NULL AUTO_INCREMENT, 
-	nombre varchar(100),
-    usuario varchar(50) NOT NULL UNIQUE,
-    contrasenna varchar(50),
-    tipo integer(1),    
-    token varchar(20),
+	Nombre varchar(100),
+    Usuario varchar(50) NOT NULL UNIQUE,
+    Contrasenna varchar(50),
+    Tipo integer(1),    
+    Token varchar(20),
     PRIMARY KEY ( ID )
 );
 
