@@ -10,10 +10,18 @@ select * from componente C;
 select * from subcomponente S;
 select * from indicador I;
 select * from indicadorinfo I;
-select * from indicadorxasada I;
+select count(*) from indicadorxasada I;
 select * from nominal N;
- 
-select * from usuario U;
+select * from lineal L;
+select * from asadaInfo A; 
+select * from usuario U where id<>2;
+select * from historicorespuesta;
+
+delete from historicorespuesta where Asada_ID=155 limit 1;
+
+update asada a, asadainfo ai set Distrito_id= "1012" where a.ID=155 and ai.Asada_ID=155;
+
+insert into historicorespuesta select * from indicadorxasada;
 
 
 /*DELETE*/
@@ -29,6 +37,7 @@ delete from indicador where ID>=0;
 
 /*DROP*/
 drop table indicadorxasada;
+drop table historicorespuesta;
 drop table usuarioxasada;
 drop table asadainfo;
 drop table indicadorinfo;
@@ -44,14 +53,15 @@ drop table distrito;
 drop table canton;
 drop table provincia;
 
-
+SET FOREIGN_KEY_CHECKS = 0;
+truncate table historicorespuesta;
 truncate table indicadorxasada;
 truncate table usuarioxasada;
 truncate table asadainfo;
 truncate table indicadorinfo;
-truncate table asada;
 truncate table nominal;
 truncate table lineal;
+truncate table asada;
 truncate table indicador;
 truncate table subcomponente;
 truncate table componente;
@@ -60,7 +70,10 @@ truncate table usuario;
 truncate table distrito;
 truncate table canton;
 truncate table provincia;
+SET FOREIGN_KEY_CHECKS = 1;
 
+
+select * from Lineal;
 
 
 
@@ -129,9 +142,9 @@ insert into subcomponente(id,nombre,componente_ID,Medida_ID) values(27,'EC-2',7,
 update subcomponente set Medida_ID=1 where id= 26;
 
 
-insert into usuario(nombre,usuario,contrasenna,tipo,token) values('Joseph Ramírez Barquero','joseph','123',1,'232434fdfgsdfs');
+insert into usuario(nombre,usuario,contrasenna,tipo) values('Joseph Ramírez Barquero','joseph','123',1);
 
-select * from usuario;
+select * from subcomponente;
 
 
 select A.nombre, Su.detalle ,S.texto from subcomponentexasada S inner join Asada A on A.codigo=S.Asada_Codigo inner join subcomponente Su on Su.ID=S.Subcomponente_ID where S.Asada_Codigo = 155 and Año= 2018;
@@ -140,9 +153,20 @@ select C.ID as idd ,Ca.ID as idc ,P.ID as idp, C.Nombre as distrito ,Ca.Nombre a
 
 update componente set valor=10 where id =5;
 
-select * from asada;
+select * from asadainfo;
+
+update subcomponente set CantPreguntas=0, Siglas='SCN' where id=16;
 
 
 insert into asada(codigo, nombre, DISTRITO_ID, DISTRITO_CANTON_ID, DISTRITO_CANTON_PROVINCIA_ID) values("+ident+","+nom+","+sites[0]+","+sites[1]+","+sites[2]+");
 
 select distinct c.codigo from Asada A, distrito C, Canton Ca, provincia P where A.DISTRITO_ID=C.ID and A.DISTRITO_CANTON_ID=Ca.ID and A.DISTRITO_CANTON_PROVINCIA_ID=P.ID and C.CANTON_PROVINCIA_ID=P.ID and C.CANTON_ID=Ca.ID and Ca.PROVINCIA_ID=P.ID;
+
+
+select u.*,ua.Asada_ID from usuario u left join usuarioxasada ua on u.ID=ua.Usuario_ID where usuario= 'joseph2' and contrasenna= '123';
+
+SELECT a.Nombre as asada, c.Nombre, (SUM(s.valor * i.valor) * 10000) / c.valor  AS valor FROM indicadorxasada s, indicador i, 
+        subcomponente d, componente c, asada a WHERE s.Indicador_ID = i.ID  and i.Subcomponente_ID=d.ID and d.Componente_ID= c.ID 
+        and s.Asada_ID=154 and s.Asada_ID=a.ID GROUP BY a.Nombre, c.Nombre;
+        
+select u.*,ua.Asada_ID,a.Nombre as Asada from usuario u left join usuarioxasada ua on u.ID=ua.Usuario_ID left join asada a on ua.Asada_ID=a.ID;        

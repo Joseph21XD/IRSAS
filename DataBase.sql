@@ -85,6 +85,17 @@ CREATE TABLE INDICADORXASADA(
     Texto			 VARCHAR(20) NOT NULL,
     PRIMARY KEY ( ID )
   );
+  
+  /*Tabla de Historico Respuestas*/
+CREATE TABLE HISTORICORESPUESTA(
+    ID               INTEGER NOT NULL,
+    Año              INTEGER NOT NULL,
+    Indicador_ID INTEGER NOT NULL,
+    Asada_ID     INTEGER NOT NULL,
+    Valor			 REAL(6,3) NOT NULL,
+    Texto			 VARCHAR(20) NOT NULL,
+    PRIMARY KEY ( ID )
+  );
 
 /*Tabla de Usuarios*/
 CREATE TABLE USUARIO(
@@ -93,7 +104,6 @@ CREATE TABLE USUARIO(
     Usuario varchar(50) NOT NULL UNIQUE,
     Contrasenna varchar(50),
     Tipo integer(1),    
-    Token varchar(20),
     PRIMARY KEY ( ID )
 );
 

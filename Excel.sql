@@ -50,3 +50,8 @@ LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/
 LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/FillDat.csv' INTO TABLE indicadorxasada
   FIELDS TERMINATED BY ','
   LINES TERMINATED BY '\n' IGNORE 1 rows (Año,Indicador_id,Asada_id,Valor,Texto);
+  
+LOAD DATA LOCAL INFILE 'C:/Users/ramir/Documents/TEC/TEC/Proyecto de Asistencia/Datos/AsadasInfo.csv' INTO TABLE asadainfo
+  FIELDS TERMINATED BY ','
+  LINES TERMINATED BY '\n' IGNORE 1 rows (Asada_ID, Ubicacion, Telefono, Poblacion, Url,cantAbonados);
+  
