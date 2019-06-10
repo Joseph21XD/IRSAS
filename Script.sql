@@ -10,12 +10,23 @@ select * from componente C;
 select * from subcomponente S;
 select * from indicador I;
 select * from indicadorinfo I;
-select count(*) from indicadorxasada I;
+select * from indicadorxasada I where asada_id=150;
 select * from nominal N;
 select * from lineal L;
 select * from asadaInfo A; 
 select * from usuario U where id<>2;
 select * from historicorespuesta;
+
+select i.año as anno from indicadorxasada i union select h.año as anno from historicorespuesta h;
+
+
+
+
+select h.texto as respuesta, i.Nombre as pregunta from indicadorxasada h inner join indicador i on h.Indicador_ID=i.ID where h.Año like '2019' and h.asada_id=152;
+
+
+
+select distinct(Año) as anno from indicadorxasada where Asada_ID = 155 limit 1;
 
 delete from historicorespuesta where Asada_ID=155 limit 1;
 
@@ -169,4 +180,10 @@ SELECT a.Nombre as asada, c.Nombre, (SUM(s.valor * i.valor) * 10000) / c.valor  
         subcomponente d, componente c, asada a WHERE s.Indicador_ID = i.ID  and i.Subcomponente_ID=d.ID and d.Componente_ID= c.ID 
         and s.Asada_ID=154 and s.Asada_ID=a.ID GROUP BY a.Nombre, c.Nombre;
         
-select u.*,ua.Asada_ID,a.Nombre as Asada from usuario u left join usuarioxasada ua on u.ID=ua.Usuario_ID left join asada a on ua.Asada_ID=a.ID;        
+select u.*,ua.Asada_ID,a.Nombre as Asada from usuario u left join usuarioxasada ua on u.ID=ua.Usuario_ID left join asada a on ua.Asada_ID=a.ID; 
+
+select * from usuario;
+select * from usuarioxasada;
+
+
+insert into usuarioxasada values (2,156); update usuarioxasada set Asada_ID=156 where Usuario_ID=2 ;
