@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7ADA09B-B260-D2A6-3F14-6F5C3AA7F539" name="ASADA">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>888631E9-6266-D751-9456-99F6CFCC8DAA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="11823C2B-F213-8360-150C-3254D6EFD5FF">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>BE439D53-74C4-EE9E-74E0-D31A36EB04DE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="5F0D66F6-4E6B-7EFB-F6B7-CBC141283D11">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>28DFF80C-88A6-328A-559F-1D7AE80B1830</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F2700F49-D7CB-3047-DDFC-938EA4F576D3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISTRITO_id" id="A8A2062E-C23C-4536-F1DA-6864F611DBB3">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>AF573D82-31E3-2AA3-AEDC-FE50BFC3AECA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="839AD1AF-C86D-039B-5030-9739B055C643" referredColumn="D6E37BD1-E51A-812C-B1DE-573DC83B65DA"/>
+</associations>
+</Column>
+<Column name="Latitud" id="853534FE-ACA1-21D1-EE42-69DF4A8B4EAA">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>5E8F2343-52C1-FE99-F433-DB3148F5AA1C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E2ADF165-615F-552C-FF4D-404484FC9EFA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Longitud" id="5BB85C93-BD2E-DB2D-F784-099AEFDE8BBA">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>617EA16C-0200-1B54-5843-20A28C952203</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E2ADF165-615F-552C-FF4D-404484FC9EFA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CF624F0-7FD6-D007-E23B-C81DB1A89F6B" name="ASADA_PK">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>681753FF-4A4A-3C4B-F553-2EE668731533</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11823C2B-F213-8360-150C-3254D6EFD5FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="239FACE3-A9EF-5655-3CF5-46A135EA6DE8" name="ASADA_DISTRITO_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8A2062E-C23C-4536-F1DA-6864F611DBB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

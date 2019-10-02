@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2964E11-56B9-5200-F84D-DDECCE13ABC4" name="CANTON">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>4A7B1104-9E04-3ED9-4C62-A41086E71CAD</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9F132148-02B4-4EA2-6B90-0E6F9484794B">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>487E34A9-EA55-3332-5C18-C0249BE24475</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="444DB5BF-E732-24B4-A04E-B878FCD3B51C">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>32AD2AB9-70B8-E084-911F-8565BDA9092B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A11FBDAF-7DD2-EB21-84DB-7664AFF455F1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Provincia_ID" id="DD87E746-1963-5ECB-DA7F-C4E538A9B794">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>31DAC93F-7A78-29ED-A240-B737DE00DCE1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22749714-2D65-DB1A-741D-EAD09AFFA426" referredColumn="598BFBE8-E863-CDC7-C981-586BBFBA995D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1830502-B581-1A4D-C6E4-DF51F4033759" name="CANTON_PK">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>4CD7CF3F-C902-CD95-430D-A32A07787FED</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F132148-02B4-4EA2-6B90-0E6F9484794B"/>
+<colUsage columnID="DD87E746-1963-5ECB-DA7F-C4E538A9B794"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F880B88C-4215-E10A-BE00-B671088ACF31" name="CANTON_PROVINCIA_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD87E746-1963-5ECB-DA7F-C4E538A9B794"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

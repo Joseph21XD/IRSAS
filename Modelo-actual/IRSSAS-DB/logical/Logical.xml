@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="1C291B1D-9E9D-32B0-035B-3E2F4667CD5E" mainViewID="0633FB2D-641A-BF9F-8CD3-00AA04179CAB">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:14:02 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

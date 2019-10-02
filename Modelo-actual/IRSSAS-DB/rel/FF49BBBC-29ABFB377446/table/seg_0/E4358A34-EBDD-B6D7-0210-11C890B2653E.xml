@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4358A34-EBDD-B6D7-0210-11C890B2653E" name="INDICADOR">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>2C10CEA1-30D9-42EB-5A8A-E24AF4585E04</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7385A84D-8F29-5935-DFB1-77F6F933F7DD">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>D0057ED6-F439-2234-213E-31F7B9F54035</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Codigo" id="B6564A5A-39C5-E7AA-6628-36C95A8B0C4C">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>8EF18F58-0C35-FB92-BDAB-876C10C16E2E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CE40A855-2A26-1F68-1DE8-A35D1873B6CA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBCOMPONENTE_ID" id="E2E0BED9-4CE0-D42C-2384-9E61C34BD1F4">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>20D4DD86-DDCC-FEC4-B0F6-4319A8D4F3CD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16244049-2E84-A376-5CF9-264948895975" referredColumn="3A85E5E8-D622-A9AE-6720-35333C1AD6CD"/>
+</associations>
+</Column>
+<Column name="MEDIDA_ID" id="CC183319-9411-9150-97CF-4DCDE2EB4D2F">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>19AC8ADF-9158-E4FD-FC0E-A511DDB47B7D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5D6489C-02F0-67FF-750D-3EADF31E0B94" referredColumn="2A136C52-F0CD-4CD0-DA9F-FF25788D5E4B"/>
+</associations>
+</Column>
+<Column name="Nombre" id="FE7BBB5A-DD06-8A95-A538-BE78286EFE95">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>6687EFAC-D792-98E0-7AC8-04809B8D7E9C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>095849D0-08C2-0C81-926B-57D87F0BBD96</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Valor" id="24673F69-59BA-894E-E696-F3F643449110">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>8BC9F69F-8C0C-781C-13AF-1D29AF76179A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT022</logicalDatatype>
+<domain>A64D96EC-0B69-0670-1200-B7AEAB992835</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="493BFACB-2AB9-D56B-8E41-19618082306B" name="INDICADOR_PK">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>BD2E0658-0D89-08F3-AC89-B9B0C38608D0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7385A84D-8F29-5935-DFB1-77F6F933F7DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BE2EF14-0DE4-320B-1C46-A6C81BF54382" name="INDICADOR_MEDIDA_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC183319-9411-9150-97CF-4DCDE2EB4D2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFAE8C18-3850-B801-836F-A6C01465C62B" name="INDICADOR_SUBCOMPONENTE_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2E0BED9-4CE0-D42C-2384-9E61C34BD1F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

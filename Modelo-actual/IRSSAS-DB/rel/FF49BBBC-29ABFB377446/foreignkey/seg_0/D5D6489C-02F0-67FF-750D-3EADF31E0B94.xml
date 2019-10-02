@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D5D6489C-02F0-67FF-750D-3EADF31E0B94" containerWithKeyObject="E4358A34-EBDD-B6D7-0210-11C890B2653E" localFKIndex="2BE2EF14-0DE4-320B-1C46-A6C81BF54382" name="INDICADOR_MEDIDA_FK">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>58BCFDC6-17DD-713E-C8BD-72E2BB1C5B44</importedID>
+<referredTableLongName>MEDIDA</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>4448810F-3C0D-2F4B-AF3F-268D22BC3BB5</referredTableID>
+<keyObject>A1FB4695-02BC-DFEA-38CD-50694B7B2B28</keyObject>
+<referredKeyID>A1FB4695-02BC-DFEA-38CD-50694B7B2B28</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

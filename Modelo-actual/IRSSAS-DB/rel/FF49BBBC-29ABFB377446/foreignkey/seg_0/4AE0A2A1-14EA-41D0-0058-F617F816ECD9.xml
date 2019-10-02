@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4AE0A2A1-14EA-41D0-0058-F617F816ECD9" containerWithKeyObject="F0CF401A-0BD3-8800-2D78-F284FA27EB16" localFKIndex="C3D10D39-4400-91E3-6FCB-4BA9C77C6660" name="DISTRITO_CANTON_FK">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>E226C5C4-4002-7EF8-ABAD-4944A3D8D854</importedID>
+<referredTableLongName>CANTON</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>B2964E11-56B9-5200-F84D-DDECCE13ABC4</referredTableID>
+<keyObject>A1830502-B581-1A4D-C6E4-DF51F4033759</keyObject>
+<referredKeyID>A1830502-B581-1A4D-C6E4-DF51F4033759</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID,Provincia_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

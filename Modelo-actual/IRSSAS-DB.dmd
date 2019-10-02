@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="IRSSAS-DB" id="EED4D994-F74F-2B48-B5AB-BE90C003D816" version="3.5">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:14:02 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>EED4D994-F74F-2B48-B5AB-BE90C003D816</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="5CDF7725-46DD-502C-235E-0F1A39B262C0">
+<designStoragePath>/DataBaseMayus</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

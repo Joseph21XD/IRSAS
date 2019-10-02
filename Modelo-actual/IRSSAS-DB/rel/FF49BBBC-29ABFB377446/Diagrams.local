@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="D67B4C3D-438B-63FC-DDF8-DC7A70CE18FB" name="DataBaseMayus" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

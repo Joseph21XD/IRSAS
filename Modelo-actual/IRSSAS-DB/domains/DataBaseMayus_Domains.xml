@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="DataBaseMayus_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_200" id="095849D0-08C2-0C81-926B-57D87F0BBD96">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>200</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="0D967267-329B-CD46-2502-2C177A97F75B">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_2" id="450A9BBC-4812-4EEC-C6D6-6A6C6298CBA3">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>2</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="A11FBDAF-7DD2-EB21-84DB-7664AFF455F1">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>20</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="REAL_6_3_0" id="A64D96EC-0B69-0670-1200-B7AEAB992835">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>6</dataTypePrecision>
+         <dataTypeScale>3</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT022</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_1" id="B98DC715-CB6F-FA5A-92D5-F39EA6545BAA">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>1</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_5" id="C8881759-530B-F809-64D6-2CAC9D130C4B">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>5</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_10" id="CE40A855-2A26-1F68-1DE8-A35D1873B6CA">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>10</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_6" id="CF4D8890-9BFD-2791-C7A1-3A9DDB086052">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>6</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="E085917C-4D02-7446-461E-BE416EDA98A8">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>100</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="E2ADF165-615F-552C-FF4D-404484FC9EFA">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>50</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_150" id="F2700F49-D7CB-3047-DDFC-938EA4F576D3">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>150</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_15" id="FC9495EC-DDBB-5D48-03BE-CCC2E1A79467">
+         <createdBy>eduardo</createdBy>
+         <createdTime>2019-08-01 20:15:20 UTC</createdTime>
+         <ownerDesignName>IRSSAS-DB</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>15</dataTypeSize>
+         <fileName>DataBaseMayus_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

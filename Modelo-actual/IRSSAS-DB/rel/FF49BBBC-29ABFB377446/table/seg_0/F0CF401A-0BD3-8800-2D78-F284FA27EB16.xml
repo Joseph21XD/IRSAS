@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0CF401A-0BD3-8800-2D78-F284FA27EB16" name="DISTRITO">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>D01391DA-2936-020E-935B-87253E9C1361</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2F49AF21-8CA2-738A-EC55-58A7DB78BD60">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>A6BBD649-9726-D841-CD6F-6EAE181D662F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="119990E2-A7BD-D2BB-30B9-E6863069DCAE">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>42FF1FBE-EA99-E853-1388-F784223AAED1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E2ADF165-615F-552C-FF4D-404484FC9EFA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Canton_ID" id="52547AA3-073F-5C0E-8260-309DCF9A4466">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>6A745509-29F4-4177-B396-BE5427150652</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AE0A2A1-14EA-41D0-0058-F617F816ECD9" referredColumn="9F132148-02B4-4EA2-6B90-0E6F9484794B"/>
+</associations>
+</Column>
+<Column name="Provincia_ID" id="E65D6952-4B3D-B1E7-B90C-2CDB59EF8357">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>5516DD23-48ED-0E99-D632-1D63CFDAD63F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AE0A2A1-14EA-41D0-0058-F617F816ECD9" referredColumn="DD87E746-1963-5ECB-DA7F-C4E538A9B794"/>
+</associations>
+</Column>
+<Column name="Codigo" id="D6E37BD1-E51A-812C-B1DE-573DC83B65DA">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>351E22A0-6D75-31D8-3D7C-32DECC9D50E4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35B47A0D-9561-848E-EAED-0C02C0911C5C" name="DISTRITO_PK">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>4047D00A-5C35-90DA-430D-02A3C61FEE73</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F49AF21-8CA2-738A-EC55-58A7DB78BD60"/>
+<colUsage columnID="52547AA3-073F-5C0E-8260-309DCF9A4466"/>
+<colUsage columnID="E65D6952-4B3D-B1E7-B90C-2CDB59EF8357"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A6B8B4F-24BE-190C-6806-3E6DDE252915" name="INDEX_1">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<importedID>62CCF3B1-38EF-778D-1C57-104F215972B3</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6E37BD1-E51A-812C-B1DE-573DC83B65DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3D10D39-4400-91E3-6FCB-4BA9C77C6660" name="DISTRITO_CANTON_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:20 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52547AA3-073F-5C0E-8260-309DCF9A4466"/>
+<colUsage columnID="E65D6952-4B3D-B1E7-B90C-2CDB59EF8357"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

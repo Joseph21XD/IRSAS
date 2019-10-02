@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="DataBaseMayus" id="FF49BBBC-D9DC-C2CD-3C1E-29ABFB377446" mainViewID="D67B4C3D-438B-63FC-DDF8-DC7A70CE18FB">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-08-01 20:15:03 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>DataBaseMayus.sql</fileName>
+<pathName>/run/media/eduardo/Datos/Otros/Asistencia_proyecto/IRSAS</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>
