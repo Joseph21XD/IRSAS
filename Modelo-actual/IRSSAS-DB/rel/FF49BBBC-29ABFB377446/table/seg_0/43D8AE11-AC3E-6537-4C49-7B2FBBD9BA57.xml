@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43D8AE11-AC3E-6537-4C49-7B2FBBD9BA57" name="RANGOXINDICADOR">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-25 03:11:04 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2E77C704-598B-045C-A093-ADC7AD190B11">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-25 03:12:19 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INDICADOR_ID" id="CA29B8E0-236B-8FE7-44C8-897F5B0620DE">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-25 03:12:19 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="859E2B56-8AF1-91A3-A84D-F72011CFB62D" referredColumn="7385A84D-8F29-5935-DFB1-77F6F933F7DD"/>
+</associations>
+</Column>
+<Column name="MINIMO" id="8CF80C41-0F62-1B70-B61E-1C19270F6984">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-25 03:12:19 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT022</logicalDatatype>
+<domain>A64D96EC-0B69-0670-1200-B7AEAB992835</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAXIMO" id="B1109E1F-2856-7B79-3E22-C55B73270B99">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-25 03:12:19 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT022</logicalDatatype>
+<domain>A64D96EC-0B69-0670-1200-B7AEAB992835</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DECC1B99-6EB5-0B47-732E-5DA120120E44" name="RANGOXINDICADOR_PK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-25 03:13:36 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E77C704-598B-045C-A093-ADC7AD190B11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E65691B-9595-B7AA-FE6E-948611305EF3" name="RANGOXINDICADOR_INDICADOR_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-25 03:13:36 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA29B8E0-236B-8FE7-44C8-897F5B0620DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="859E2B56-8AF1-91A3-A84D-F72011CFB62D" containerWithKeyObject="43D8AE11-AC3E-6537-4C49-7B2FBBD9BA57" localFKIndex="0E65691B-9595-B7AA-FE6E-948611305EF3" name="RANGOXINDICADOR_INDICADOR_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-25 03:13:36 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<referredTableLongName>INDICADOR</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>E4358A34-EBDD-B6D7-0210-11C890B2653E</referredTableID>
+<keyObject>493BFACB-2AB9-D56B-8E41-19618082306B</keyObject>
+<referredKeyID>493BFACB-2AB9-D56B-8E41-19618082306B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
