@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BBE8B39B-1320-4E5C-D7E4-4DC75F27837F" name="TEMPRESPUESTAFORM">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<ordsAlias>indicadorxasadav1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="25310ED0-68AE-7C5B-8CF2-C30BD6C25436">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANNO" id="6888DFB1-7630-746B-F57E-94A2BBA44699">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INDICADOR_ID" id="FFE51FB7-3014-AF7D-1304-1FB6BA2FDAA7">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58F78D4D-E6D2-F080-82D7-C885A2F74696" referredColumn="7385A84D-8F29-5935-DFB1-77F6F933F7DD"/>
+</associations>
+</Column>
+<Column name="ASADA_ID" id="3EC5F4C2-8D3C-8926-50B1-DAA9B61BA26C">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>0D967267-329B-CD46-2502-2C177A97F75B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8356B49C-B93F-1097-7357-EFE27F0AEA18" referredColumn="11823C2B-F213-8360-150C-3254D6EFD5FF"/>
+</associations>
+</Column>
+<Column name="TEXTO" id="3637FC46-56BB-0DA1-C63D-035B38E1CFF4">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A11FBDAF-7DD2-EB21-84DB-7664AFF455F1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FBE4E3E1-4969-0AB8-6EC3-8DBA4FA9D8F6" name="TEMPREPUESTAFORM">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25310ED0-68AE-7C5B-8CF2-C30BD6C25436"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07D9AF8B-898C-7D0A-5456-51B86A74DDD9" name="TEMPRESPUESTAFORM_ASADA_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EC5F4C2-8D3C-8926-50B1-DAA9B61BA26C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8F06118-4DEB-6903-5D3F-0680B714D59D" name="TEMPRESPUESTAFORM_INDICADOR_FK">
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFE51FB7-3014-AF7D-1304-1FB6BA2FDAA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

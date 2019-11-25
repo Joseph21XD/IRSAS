@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8356B49C-B93F-1097-7357-EFE27F0AEA18" containerWithKeyObject="BBE8B39B-1320-4E5C-D7E4-4DC75F27837F" localFKIndex="07D9AF8B-898C-7D0A-5456-51B86A74DDD9" name="TEMPRESPUESTAFORM_ASADA_FK">
+<sourceDDLFile>DataBaseMayus.sql</sourceDDLFile>
+<createdBy>eduardo</createdBy>
+<createdTime>2019-11-23 17:54:00 UTC</createdTime>
+<ownerDesignName>IRSSAS-DB</ownerDesignName>
+<referredTableLongName>ASADA</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>D7ADA09B-B260-D2A6-3F14-6F5C3AA7F539</referredTableID>
+<keyObject>6CF624F0-7FD6-D007-E23B-C81DB1A89F6B</keyObject>
+<referredKeyID>6CF624F0-7FD6-D007-E23B-C81DB1A89F6B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
