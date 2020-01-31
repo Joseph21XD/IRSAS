@@ -1,78 +1,96 @@
-﻿Asada_ID,Ubicación,Telefono,Poblacion,Url,CantAbonados
-151,"Contiguo a la iglesia de San Jeronimo, Cachí, Cartago",0,620,no,141
-152,"Contiguo a la plaza de Santiago, Paraíso, Cartago",0,3225,no,733
-153,"Provincia de Cartago, Paraíso, Orosi",72781464,2068,no,470
-155,Ubicación,Telefono,Poblacion,Url,CantAbonados
-156,Ubicación,Telefono,Poblacion,Url,CantAbonados
-157,Ubicación,Telefono,Poblacion,Url,CantAbonados
-160,Ubicación,Telefono,Poblacion,Url,CantAbonados
-162,Ubicación,Telefono,Poblacion,Url,CantAbonados
-164,Ubicación,Telefono,Poblacion,Url,CantAbonados
-165,Ubicación,Telefono,Poblacion,Url,CantAbonados
-166,Ubicación,Telefono,Poblacion,Url,CantAbonados
-167,Ubicación,Telefono,Poblacion,Url,CantAbonados
-168,Ubicación,Telefono,Poblacion,Url,CantAbonados
-169,Ubicación,Telefono,Poblacion,Url,CantAbonados
-170,Ubicación,Telefono,Poblacion,Url,CantAbonados
-172,Ubicación,Telefono,Poblacion,Url,CantAbonados
-173,Ubicación,Telefono,Poblacion,Url,CantAbonados
-174,Ubicación,Telefono,Poblacion,Url,CantAbonados
-175,Ubicación,Telefono,Poblacion,Url,CantAbonados
-203,Ubicación,Telefono,Poblacion,Url,CantAbonados
-213,Ubicación,Telefono,Poblacion,Url,CantAbonados
-217,Ubicación,Telefono,Poblacion,Url,CantAbonados
-220,Ubicación,Telefono,Poblacion,Url,CantAbonados
-221,Ubicación,Telefono,Poblacion,Url,CantAbonados
-222,Ubicación,Telefono,Poblacion,Url,CantAbonados
-223,Ubicación,Telefono,Poblacion,Url,CantAbonados
-224,Ubicación,Telefono,Poblacion,Url,CantAbonados
-225,Ubicación,Telefono,Poblacion,Url,CantAbonados
-226,Ubicación,Telefono,Poblacion,Url,CantAbonados
-228,Ubicación,Telefono,Poblacion,Url,CantAbonados
-229,Ubicación,Telefono,Poblacion,Url,CantAbonados
-231,Ubicación,Telefono,Poblacion,Url,CantAbonados
-232,Ubicación,Telefono,Poblacion,Url,CantAbonados
-233,Ubicación,Telefono,Poblacion,Url,CantAbonados
-234,Ubicación,Telefono,Poblacion,Url,CantAbonados
-235,Ubicación,Telefono,Poblacion,Url,CantAbonados
-236,Ubicación,Telefono,Poblacion,Url,CantAbonados
-237,Ubicación,Telefono,Poblacion,Url,CantAbonados
-238,Ubicación,Telefono,Poblacion,Url,CantAbonados
-239,Ubicación,Telefono,Poblacion,Url,CantAbonados
-241,Ubicación,Telefono,Poblacion,Url,CantAbonados
-243,Ubicación,Telefono,Poblacion,Url,CantAbonados
-244,Ubicación,Telefono,Poblacion,Url,CantAbonados
-245,Ubicación,Telefono,Poblacion,Url,CantAbonados
-246,Ubicación,Telefono,Poblacion,Url,CantAbonados
-247,Ubicación,Telefono,Poblacion,Url,CantAbonados
-248,Ubicación,Telefono,Poblacion,Url,CantAbonados
-249,Ubicación,Telefono,Poblacion,Url,CantAbonados
-250,Ubicación,Telefono,Poblacion,Url,CantAbonados
-251,Ubicación,Telefono,Poblacion,Url,CantAbonados
-253,Ubicación,Telefono,Poblacion,Url,CantAbonados
-254,Ubicación,Telefono,Poblacion,Url,CantAbonados
-255,Ubicación,Telefono,Poblacion,Url,CantAbonados
-257,Ubicación,Telefono,Poblacion,Url,CantAbonados
-258,Ubicación,Telefono,Poblacion,Url,CantAbonados
-259,Ubicación,Telefono,Poblacion,Url,CantAbonados
-260,Ubicación,Telefono,Poblacion,Url,CantAbonados
-261,Ubicación,Telefono,Poblacion,Url,CantAbonados
-262,Ubicación,Telefono,Poblacion,Url,CantAbonados
-263,Ubicación,Telefono,Poblacion,Url,CantAbonados
-264,Ubicación,Telefono,Poblacion,Url,CantAbonados
-265,Ubicación,Telefono,Poblacion,Url,CantAbonados
-341,Ubicación,Telefono,Poblacion,Url,CantAbonados
-621,Ubicación,Telefono,Poblacion,Url,CantAbonados
-625,Ubicación,Telefono,Poblacion,Url,CantAbonados
-626,Ubicación,Telefono,Poblacion,Url,CantAbonados
-627,Ubicación,Telefono,Poblacion,Url,CantAbonados
-628,Ubicación,Telefono,Poblacion,Url,CantAbonados
-629,Ubicación,Telefono,Poblacion,Url,CantAbonados
-4315,Ubicación,Telefono,Poblacion,Url,CantAbonados
-4317,Ubicación,Telefono,Poblacion,Url,CantAbonados
-4329,Ubicación,Telefono,Poblacion,Url,CantAbonados
-4438,Ubicación,Telefono,Poblacion,Url,CantAbonados
-4578,Ubicación,Telefono,Poblacion,Url,CantAbonados
-4584,Ubicación,Telefono,Poblacion,Url,CantAbonados
-4627,Ubicación,Telefono,Poblacion,Url,CantAbonados
-4778,Ubicación,Telefono,Poblacion,Url,CantAbonados
+Asada_ID,Ubicación,Telefono,Poblacion,Url,CantAbonados
+5014A,Ubicación,Telefono,1,Url,1
+5014B,Ubicación,Telefono,1,Url,1
+5014C,Ubicación,Telefono,1,Url,1
+5014D,Ubicación,Telefono,1,Url,1
+5014E,Ubicación,Telefono,1,Url,1
+5014F,Ubicación,Telefono,1,Url,1
+5042A,Ubicación,Telefono,1,Url,1
+5042B,Ubicación,Telefono,1,Url,1
+5042C,Ubicación,Telefono,1,Url,1
+5042D,Ubicación,Telefono,1,Url,1
+5043A,Ubicación,Telefono,1,Url,1
+5043B,Ubicación,Telefono,1,Url,1
+5043C,Ubicación,Telefono,1,Url,1
+5043D,Ubicación,Telefono,1,Url,1
+5043E,Ubicación,Telefono,1,Url,1
+5043F,Ubicación,Telefono,1,Url,1
+5044A,Ubicación,Telefono,1,Url,1
+5061A,Ubicación,Telefono,1,Url,1
+5061B,Ubicación,Telefono,1,Url,1
+5065A,Ubicación,Telefono,1,Url,1
+5071A,Ubicación,Telefono,1,Url,1
+5071B,Ubicación,Telefono,1,Url,1
+5071C,Ubicación,Telefono,1,Url,1
+5071D,Ubicación,Telefono,1,Url,1
+5071E,Ubicación,Telefono,1,Url,1
+5072A,Ubicación,Telefono,1,Url,1
+5072B,Ubicación,Telefono,1,Url,1
+5072C,Ubicación,Telefono,1,Url,1
+5072D,Ubicación,Telefono,1,Url,1
+5072E,Ubicación,Telefono,1,Url,1
+5072F,Ubicación,Telefono,1,Url,1
+5072G,Ubicación,Telefono,1,Url,1
+5072H,Ubicación,Telefono,1,Url,1
+5072I,Ubicación,Telefono,1,Url,1
+5072J,Ubicación,Telefono,1,Url,1
+5073A,Ubicación,Telefono,1,Url,1
+5073B,Ubicación,Telefono,1,Url,1
+5073C,Ubicación,Telefono,1,Url,1
+5073D,Ubicación,Telefono,1,Url,1
+5074A,Ubicación,Telefono,1,Url,1
+5074B,Ubicación,Telefono,1,Url,1
+5074C,Ubicación,Telefono,1,Url,1
+5074D,Ubicación,Telefono,1,Url,1
+5074E,Ubicación,Telefono,1,Url,1
+5081A,Ubicación,Telefono,1,Url,1
+5081B,Ubicación,Telefono,1,Url,1
+5081C,Ubicación,Telefono,1,Url,1
+5082A,Ubicación,Telefono,1,Url,1
+5082B,Ubicación,Telefono,1,Url,1
+5082C,Ubicación,Telefono,1,Url,1
+5082D,Ubicación,Telefono,1,Url,1
+5082E,Ubicación,Telefono,1,Url,1
+5082F,Ubicación,Telefono,1,Url,1
+5082G,Ubicación,Telefono,1,Url,1
+5083A,Ubicación,Telefono,1,Url,1
+5083B,Ubicación,Telefono,1,Url,1
+5083C,Ubicación,Telefono,1,Url,1
+5085A,Ubicación,Telefono,1,Url,1
+5085B,Ubicación,Telefono,1,Url,1
+5085C,Ubicación,Telefono,1,Url,1
+5085D,Ubicación,Telefono,1,Url,1
+5086A,Ubicación,Telefono,1,Url,1
+5086B,Ubicación,Telefono,1,Url,1
+5086C,Ubicación,Telefono,1,Url,1
+5087A,Ubicación,Telefono,1,Url,1
+6041A,Ubicación,Telefono,1,Url,1
+6041B,Ubicación,Telefono,1,Url,1
+6041C,Ubicación,Telefono,1,Url,1
+6041D,Ubicación,Telefono,1,Url,1
+6041E,Ubicación,Telefono,1,Url,1
+6042A,Ubicación,Telefono,1,Url,1
+20212A,Ubicación,Telefono,1,Url,1
+60116A,Ubicación,Telefono,1,Url,1
+60116B,Ubicación,Telefono,1,Url,1
+3075A,Costado norte Iglesia Catolica,83133554,1800,no,410
+3034B,Frente terminal buses ,no tiene,700,no,230
+30111A,Costado norte plaza deportes,80808080,4380,no,1000
+3082A,300 metros oeste de la plaza,25735103,2500,no,567
+3058A,Casa familia del administrador,no tiene,375,no,85
+3052A,Casa familia del administrador,84956365,154,no,35
+3054A,Frente Escuela Publica MEP,84282604,4000,no,906
+3022A,Contiguo Plaza deportes,no tiene,1870,no,425
+3023A,Camino Tapante,no tiene,3225,no,773
+30511A,Casa Administrador,88122743,1420,no,323
+3082B,Contiguo Tanque de AyA,25734301,2847,no,647
+3082C,Interamericana Sur 100 Este,no tiene,1690,no,384
+3082D,100 metros norte de la Estacion Electrica de Jasec,83429510,1012,no,230
+3074A,Frente calle a Cipreses,25366132,2500,no,580
+3072A,300 Norte plaza,25366081,12000,no,2025
+3073A,Centro,25302033,2280,no,438
+3014A,100 m sur de tanques ASADA,25372844,678,no,154
+3075B,Centro,25252525,3700,no,850
+3022B,Contiguo Plaza deportes,no tiene,3225,no,733
+3024A,Camino Principal Tucurrique,25771372,620,no,141
+3023B,Urbanizacion INVU,83272815,2068,no,470

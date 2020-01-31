@@ -36,7 +36,7 @@ CREATE TABLE DISTRITO(
 
 /*Tabla de ASADAs*/
 CREATE TABLE ASADA(
-    ID                       INTEGER NOT NULL ,
+    ID                         varchar(20) ,
     Nombre                       VARCHAR (150) ,
     DISTRITO_id                  INTEGER NOT NULL ,
     Latitud 					 VARCHAR (50),
@@ -80,7 +80,7 @@ CREATE TABLE INDICADORXASADA(
     ID               INTEGER NOT NULL AUTO_INCREMENT,
     Año              INTEGER NOT NULL ,
     INDICADOR_ID     INTEGER NOT NULL ,
-    ASADA_ID         INTEGER NOT NULL,
+    ASADA_ID         varchar(20) NOT NULL,
     Valor            REAL(6,3) NOT NULL,
     Texto            VARCHAR(20) NOT NULL,
     PRIMARY KEY ( ID )
@@ -91,7 +91,7 @@ CREATE TABLE HISTORICORESPUESTA(
     ID               INTEGER NOT NULL,
     Año              INTEGER NOT NULL,
     INDICADOR_ID     INTEGER NOT NULL,
-    ASADA_ID         INTEGER NOT NULL,
+    ASADA_ID         varchar(20) NOT NULL,
     Valor            REAL(6,3) NOT NULL,
     Texto            VARCHAR(20) NOT NULL,
     PRIMARY KEY ( ID )
@@ -141,7 +141,7 @@ CREATE TABLE INDICADORINFO(
 
 CREATE TABLE ASADAINFO(
 	ID INTEGER NOT NULL AUTO_INCREMENT,
-    ASADA_ID INTEGER NULL,
+    ASADA_ID varchar(20) NOT NULL,
     Ubicacion Varchar(200),
     Telefono Varchar(15),
     Poblacion Varchar(6),
@@ -152,7 +152,7 @@ CREATE TABLE ASADAINFO(
 
 CREATE TABLE USUARIOXASADA(
     USUARIO_ID INTEGER NOT NULL UNIQUE,
-    ASADA_ID INTEGER NOT NULL,
+    ASADA_ID varchar(20) NOT NULL,
     PRIMARY KEY ( USUARIO_ID )
 );
 
@@ -161,7 +161,7 @@ CREATE TABLE TEMPRESPUESTAFORM(
     ID              INTEGER NOT NULL AUTO_INCREMENT,
     ANNO            INTEGER NOT NULL ,
     INDICADOR_ID    INTEGER NOT NULL ,
-    ASADA_ID        INTEGER NOT NULL,
+    ASADA_ID        varchar(20) NOT NULL,
     TEXTO           VARCHAR(20) NOT NULL,
     PRIMARY KEY ( ID )
   );
