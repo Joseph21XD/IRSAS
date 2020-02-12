@@ -49,7 +49,7 @@ CREATE TABLE ASADA(
 CREATE TABLE COMPONENTE( 
 	ID INTEGER NOT NULL AUTO_INCREMENT,
     Nombre VARCHAR (50) NOT NULL, 
-    Valor REAL(6,3) NOT NULL,
+    Valor REAL(10,7) NOT NULL,
     PRIMARY KEY ( ID )
   ) ;
 
@@ -57,7 +57,7 @@ CREATE TABLE COMPONENTE(
 CREATE TABLE SUBCOMPONENTE( 
 	ID INTEGER NOT NULL AUTO_INCREMENT, 
     Nombre VARCHAR (50), 
-    Valor REAL(6,3) NOT NULL,
+    Valor REAL(10,7) NOT NULL,
 	COMPONENTE_ID INTEGER NOT NULL,
     CantPreguntas INTEGER,
     Siglas Varchar(5),
@@ -71,7 +71,7 @@ CREATE TABLE INDICADOR(
     SUBCOMPONENTE_ID INTEGER NOT NULL,
     MEDIDA_ID     INTEGER NOT NULL,
     Nombre 	  VARCHAR(200) NOT NULL,
-    Valor			 REAL(6,3) NOT NULL,
+    Valor			 REAL(10,7) NOT NULL,
     PRIMARY KEY ( ID )
   ) ;
 
@@ -81,7 +81,7 @@ CREATE TABLE INDICADORXASADA(
     Año              INTEGER NOT NULL ,
     INDICADOR_ID     INTEGER NOT NULL ,
     ASADA_ID         varchar(20) NOT NULL,
-    Valor            REAL(6,3) NOT NULL,
+    Valor            REAL(10,7) NOT NULL,
     Texto            VARCHAR(20) NOT NULL,
     PRIMARY KEY ( ID )
   );
@@ -92,7 +92,7 @@ CREATE TABLE HISTORICORESPUESTA(
     Año              INTEGER NOT NULL,
     INDICADOR_ID     INTEGER NOT NULL,
     ASADA_ID         varchar(20) NOT NULL,
-    Valor            REAL(6,3) NOT NULL,
+    Valor            REAL(10,7) NOT NULL,
     Texto            VARCHAR(20) NOT NULL,
     PRIMARY KEY ( ID )
   );

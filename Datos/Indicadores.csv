@@ -16,10 +16,10 @@ GRPH-4,3,4,Consumo de agua por la comunidad (l/p/d),0.025
 GRPH-5,3,1,Operador con plan de atención integral de riesgo,0.025
 GRPH-6,3,1,Cuentan con programas para adaptación al cambio climático,0.025
 GRPH-7,3,1,Registros de aforos de las fuentes de abastecimiento,0.025
-GAP-1,4,1,Se diagnóstica el riesgo en los componentes del acueducto mediante la herramienta SERSA,0.026
-GAP-2,4,1,Posee sistema de desinfección,0.026
-GAP-3,4,1,Posee planta potabilizadora,0.026
-GAP-4,4,1,Posee el acueducto sello de calidad sanitaria ,0.026
+GAP-1,4,1,Se diagnóstica el riesgo en los componentes del acueducto mediante la herramienta SERSA,0.02625
+GAP-2,4,1,Posee sistema de desinfección,0.02625
+GAP-3,4,1,Posee planta potabilizadora,0.02625
+GAP-4,4,1,Posee el acueducto sello de calidad sanitaria ,0.02625
 GAF-1,5,5,Porcentaje De Morosidad en el pago del servicio de agua,0.035
 GAF-2,5,5,Porcentaje de agua no contabilizada,0.035
 IDS-1,6,3,Índice de Desarrollo Social,0.1
